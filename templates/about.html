@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Developers</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/feature-navbar.css') }}">
+
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 30px auto;
+            max-width: 1100px;
+            padding: 0 15px;
+        }
+
+        .team-card {
+            background: #1e293b;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 24px 16px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            border-color: #6366f1;
+        }
+
+        .team-card img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #6366f1;
+            margin: 0 auto 14px auto;
+            display: block;
+            background-color: #334155;
+        }
+
+        .team-card h3 {
+            margin: 8px 0 4px;
+            font-size: 1.2rem;
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+
+        .team-card .role {
+            font-size: 0.88rem;
+            color: #818cf8 !important;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .team-card .dept {
+            font-size: 0.8rem;
+            color: #cbd5e1 !important;
+            margin-bottom: 14px;
+        }
+
+        .team-socials a {
+            color: #94a3b8;
+            margin: 0 8px;
+            font-size: 1.15rem;
+            transition: color 0.2s;
+        }
+
+        .team-socials a:hover {
+            color: #818cf8;
+        }
+    </style>
+</head>
+
+<body>
+
+{% include 'background.html' %}
+{% set title = "Meet the Developers" %}
+{% set home_link = "/" %}
+{% include "feature_header.html" %}
+
+<!-- ========================= -->
+<!-- MEET THE TEAM -->
+<!-- ========================= -->
+<section class="about-section">
+    <div style="text-align: center; margin-bottom: 25px;">
+        <span class="developer-badge">Our Team</span>
+        <h1 style="font-size: 2.3rem; margin-top: 10px; color: #1e293b;">Meet the Developers</h1>
+        <p style="color: #475569; max-width: 650px; margin: 10px auto;">
+            We are B.Tech Computer Science students passionate about Artificial Intelligence,
+            Web Development, and building solutions that simplify students' academic learning.
+        </p>
+    </div>
+
+    <div class="team-grid">
+        <!-- 1. Jeet Pratap -->
+        <div class="team-card">
+            <img src="{{ url_for('static', filename='images/jeet.jpg') }}" alt="Jeet Pratap">
+            <h3>Jeet Pratap</h3>
+            <div class="role">AI Integration & Lead Developer</div>
+            <div class="dept">B.Tech Computer Science</div>
+            <div class="team-socials">
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- 2. Kaushal Singh -->
+        <div class="team-card">
+            <img src="{{ url_for('static', filename='images/kaushal.jpg') }}" alt="Kaushal Singh">
+            <h3>Kaushal Singh</h3>
+            <div class="role">Frontend & UI Design</div>
+            <div class="dept">B.Tech Computer Science</div>
+            <div class="team-socials">
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- 3. Khushal Gupta -->
+        <div class="team-card">
+            <img src="{{ url_for('static', filename='images/khushal.jpg') }}" alt="Khushal Gupta">
+            <h3>Khushal Gupta</h3>
+            <div class="role">Prompt Engineering & Backend</div>
+            <div class="dept">B.Tech Computer Science</div>
+            <div class="team-socials">
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- 4. Jay Mishra -->
+        <div class="team-card">
+            <img src="{{ url_for('static', filename='images/jay.jpg') }}" alt="Jay Mishra">
+            <h3>Jay Mishra</h3>
+            <div class="role">Testing & Documentation</div>
+            <div class="dept">B.Tech Computer Science</div>
+            <div class="team-socials">
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- ABOUT PROJECT -->
+<!-- ========================= -->
+<section class="about-section">
+    <h2>About The Project</h2>
+    <div class="about-card">
+        <p>
+            Hello! We are <strong>Jeet Pratap</strong>, <strong>Kaushal Singh</strong>, <strong>Khushal Gupta</strong>, and <strong>Jay Mishra</strong> — B.Tech Computer Science students passionate about Artificial Intelligence, Software Engineering, and Problem Solving.
+        </p>
+        <p>
+            Our curiosity inspired us to explore technologies including C, C++, Java, Python, HTML, CSS, JavaScript, and Flask. While developing this platform, we harnessed the power of Generative AI and integrated the Gemini API to build intelligent features for student productivity.
+        </p>
+        <p>
+            <strong>AI Student Assistant</strong> is our collaborative project created to help students study smarter through features like the AI Chatbot, Notes Summarizer, Quiz Generator, Email Writer, Study Planner, and Assignment Helper.
+        </p>
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- SKILLS -->
+<!-- ========================= -->
+<section class="skills-section">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+        <span class="skill">C</span>
+        <span class="skill">C++</span>
+        <span class="skill">Java</span>
+        <span class="skill">Python</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Flask</span>
+        <span class="skill">Gemini API</span>
+        <span class="skill">Generative AI</span>
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- FEATURED PROJECT -->
+<!-- ========================= -->
+<section class="project-section">
+    <h2>Featured Project</h2>
+    <div class="featured-project">
+        <div class="project-top">
+            <div>
+                <span class="project-badge">Major Project</span>
+                <h3>AI Student Assistant</h3>
+                <p class="project-subtitle">
+                    An AI-powered academic platform built to simplify students' learning experience using Generative AI.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-features">
+            <div class="feature-box">
+                <i class="fa-solid fa-comments"></i>
+                <div>
+                    <h4>AI Chatbot</h4>
+                    <p>Instant academic question answering.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-file-lines"></i>
+                <div>
+                    <h4>Notes Summarizer</h4>
+                    <p>Summarizes lengthy notes into concise content.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-list-check"></i>
+                <div>
+                    <h4>Quiz Generator</h4>
+                    <p>Creates MCQs with answer keys.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-calendar-days"></i>
+                <div>
+                    <h4>Study Planner</h4>
+                    <p>Generates personalized study schedules.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <h4>Email Writer</h4>
+                    <p>Professional email generation.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-book-open"></i>
+                <div>
+                    <h4>Assignment Helper</h4>
+                    <p>Generates structured assignments.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-bottom">
+            <div>
+                <h5>Technology</h5>
+                <span>Flask</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Gemini API</span>
+            </div>
+
+            <div>
+                <h5>Project Type</h5>
+                <p>Full Stack + Generative AI + Web Development</p>
+            </div>
+
+            <div>
+                <h5>Duration</h5>
+                <p>Summer Training 2026</p>
+            </div>
+
+            <div>
+                <h5>Status</h5>
+                <p class="status-live">
+                    <i class="fa-solid fa-circle"></i> Completed
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- FUTURE GOALS -->
+<!-- ========================= -->
+<section class="goal-section">
+    <h2>Future Goals</h2>
+    <div class="goal-card">
+        <div>
+            <i class="fa-solid fa-brain"></i>
+            <h3>Artificial Intelligence</h3>
+        </div>
+        <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Full Stack Development</h3>
+        </div>
+        <div>
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Build Real World Products</h3>
+        </div>
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+<section class="contact-section">
+    <h2>Let's Connect</h2>
+    <p class="contact-subtitle">
+        Feel free to connect with our team or explore our work.
+    </p>
+
+    <div class="contact-grid">
+        <a href="https://github.com" target="_blank" class="contact-card">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+            <span>View Our Repositories</span>
+        </a>
+
+        <a href="https://linkedin.com" target="_blank" class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <span>Professional Network</span>
+        </a>
+
+        <a href="mailto:team.studentassistant@gmail.com" class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+            <span>team.studentassistant@gmail.com</span>
+        </a>
+
+        <a href="https://github.com" target="_blank" class="contact-card">
+            <i class="fa-solid fa-code-branch"></i>
+            <h3>Source Code</h3>
+            <span>AI Student Assistant</span>
+        </a>
+    </div>
+</section>
+
+<footer class="developer-footer">
+    <p>
+        © 2026 Jeet Pratap, Kaushal Singh, Khushal Gupta, Jay Mishra • Built with Flask, HTML, CSS, JavaScript & Gemini API
+    </p>
+</footer>
+
+</body>
+</html>
