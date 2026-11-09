@@ -195,7 +195,7 @@ http://127.0.0.1:5000
 
 # 👨‍💻 Developer
 
-**Harsh Singh**
+**Akanksha Tripathi**
 
 B.Tech Computer Science Student
 
@@ -212,15 +212,15 @@ Passionate about
 
 **GitHub**
 
-https://github.com/HarshSingh-2310
+https://github.com/AkankshaaTripathi
 
 **LinkedIn**
 
-https://www.linkedin.com/in/harsh-singh-49653b321/
+https://www.linkedin.com/in/akanksha-tripathi-a66850362/
 
 **Email**
 
-harsh2304singh@gmail.com
+tripathiakanksha2216@gmail.com
 
 ---
 
@@ -236,4 +236,4 @@ It motivates me to build more AI-powered applications.
 
 This project is developed for educational and learning purposes.
 
-© 2026 Harsh Singh. All Rights Reserved.
+© 2026 Akanksha Tripathi. All Rights Reserved.
